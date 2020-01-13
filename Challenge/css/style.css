@@ -1,0 +1,155 @@
+/*Wide left bar*/
+.sidenav {
+  height: 100%;
+  width: 350px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #dddd;
+}
+
+/*Menu bar*/
+.navbar {
+	z-index: 3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	background-color: white;
+	width: 100%;;
+	opacity: 1;
+}
+
+.responsive{
+    width: 8%;
+}
+
+/*Style Button class I*/
+.button {
+	position: absolute; 
+  border-radius: 4px;
+  height: 40px;
+  width: 320px;
+  top: 38%;
+  left:4%;
+  background-color: #eeee;
+  border: none;
+  padding: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-transform:rotate(-90deg);
+  z-index: 1;
+}
+
+/*Style Button class II*/
+.button2 {
+	position: absolute; 
+  border-radius: 4px;
+  height: 40px;
+  width: 320px;
+  top: 38%;
+  left:14%;
+  background-color: #eeee;
+  border: none;
+  padding: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-transform:rotate(-90deg);
+  z-index: 1;
+}
+
+/*Style Button class III*/
+.button3 {
+	position: absolute; 
+  border-radius: 4px;
+  height: 40px;
+  width: 320px;
+  top: 38%;
+  left:24.2%;
+  background-color: #eeee;
+  border: none;
+  padding: 12px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  -webkit-transform:rotate(-90deg);
+  z-index: 1;
+}
+
+.tableofinformation {
+  position: fixed;
+  top: 35.6%;
+  left: 380px;
+  opacity: 1;
+  z-index: 2;
+ }
+
+/*Style main table*/
+table.styletable {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table.styletable th, td {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableclass1{
+  background-color: #dddd;
+  position: absolute;
+  top: 33.3%;
+  left: 535px;
+  z-index: 1;
+ }
+
+/*Style class1 table*/
+table.styleclass1 {
+  border-collapse: collapse;
+  background-color: #cccc;
+  width: 100%;
+}
+
+table.styleclass1 th, td {
+  padding: 20px;
+}
+
+.tableclass2{
+   background-color: #dddd;
+   position: absolute;
+   top: 33.4%;
+   left: 587px;
+   z-index: 1;
+ }
+
+/*Style class2 table*/
+table.styleclass2 {
+  border-collapse: collapse;
+  background-color: #cccc;
+  width: 100%;
+}
+
+table.styleclass2 th, td {
+  padding: 20px;
+}
+
+.tableclass3{
+  background-color: #dddd;
+  position: absolute;
+  top: 33.4%;
+  z-index: 1;
+ }
+
+/*Style class3 table*/
+table.styleclass3 {
+  border-collapse: collapse;
+  background-color: #cccc;
+}
+
+table.styleclass3 th, td {
+  padding: 20px;
+}
+

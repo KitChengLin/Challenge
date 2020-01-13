@@ -1,0 +1,16 @@
+{
+  "fullinformation": [
+    {
+        "FullName": "Juan Ramírez",
+        "Percentage": "50%"
+    },
+    {
+        "FullName": "Julia Pérez",
+        "Percentage": "20%"
+    },
+    {
+        "FullName": "Oscar Gómez",
+        "Percentage": "30%"
+    }
+  ]
+}

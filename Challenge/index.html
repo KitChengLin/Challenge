@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+    <!--Libraries-->
+    <script src="public/lib/angular.min.js"></script>
+    <!--Javascript code-->
+    <script src="js/app.js"></script>
+	<title>Challenge</title>
+</head>
+<body style="background-color:#ffff;">
+	<div ng-app="myApp" ng-controller="myCtrl">
+
+		<!--Wide left bar-->
+		<div class="sidenav"></div>
+        <!--Menu Bar-->
+     	<div class="navbar">
+     		<div class="logo">
+     			<img src="public/img/logo.png" class="responsive">
+     		</div>
+		</div>
+		<!--Main Table-->
+		<div class="tableofinformation">
+            <table style="overflow-x:auto; overflow-y:auto;" id="tb" class="styletable">
+                <tr>
+                    <th style="margin-right: 10px; text-align: left;">Nombre completo</th>
+                    <th><button id="btnc1" class="button" style=" text-align:right;" ng-click="aboutclass1()"><b>CLASE &nbspI</b></button></th>
+                    <th><button id="btnc2" class="button2" style=" text-align:right;" ng-click="aboutclass2()"><b>CLASE &nbspII</b></button></th>
+                    <th><button id="btnc3" class="button3" style=" text-align:right;" ng-click="aboutclass3()"><b>CLASE &nbspIII</b></button></th>
+                    <th>% de la empresa</th>
+                </tr>
+                <tr>
+                	<td><b>Serie</b></td>
+                	<td></td>
+                	<td></td>
+                	<td></td>
+                	<td></td>
+                </tr>
+                <tr id="newcell2" ng-repeat="x in info">
+                    <td style="text-align: left;">{{x.FullName}}&nbsp;</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align: center;">{{x.Percentage}}&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Table Class I-->
+        <div ng-show="tableopened">
+        	<div style="text-align: center;" id="ctb1" class="tableclass1">
+        		<table class="styleclass1">
+        			<tr>
+        				<th></th>
+        				<th style="padding: 31px;">CLASE I</th>
+        				<th></th>
+        			</tr>
+        			<tr>
+        				<td>Serie E</td>
+        				<td>Serie F</td>
+        				<td>Serie R</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="x in arr">{{x["Juan Ramírez"]}}</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="y in arr">{{y["Julia Pérez"]}}</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="z in arr">{{z["Oscar Gómez"]}}</td>
+        			</tr>
+        		</table>
+        	</div>
+        </div>
+
+        <!--Table Class II-->
+        <div ng-show="tableopened2">
+        	<div style="text-align: center;" id="ctb2" class="tableclass2">
+        		<table class="styleclass2">
+        			<tr>
+        				<th colspan="4" style="padding: 31px; ">CLASE II</th>
+        			</tr>
+        			<tr>
+        				<td>Serie E</td>
+        				<td>Serie F</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="x in arr2">{{x["Juan Ramírez"]}}</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="y in arr2">{{y["Julia Pérez"]}}</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="z in arr2">{{z["Oscar Gómez"]}}</td>
+        			</tr>
+        		</table>
+        	</div>
+        </div>
+
+        <!--Table Class III-->
+        <div ng-show="tableopened3">
+        	<div style="text-align: center; left: 630px;" id="ctb3" class="tableclass3">
+        		<table class="styleclass3">
+        			<tr>
+        				<th colspan="4" style="padding: 31px;">CLASE III</th>
+        			</tr>
+        			<tr>
+        				<td>Serie A</td>
+        				<td>Serie E</td>
+        				<td>Serie F</td>
+        				<td>Serie L</td>
+        				<td>Serie R</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="x in arr3">{{x["Juan Ramírez"]}}</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="y in arr3">{{y["Julia Pérez"]}}</td>
+        			</tr>
+        			<tr>
+        				<td ng-repeat="z in arr3">{{z["Oscar Gómez"]}}</td>
+        			</tr>
+        		</table>
+        	</div>
+        </div>
+</body>
+</html>
